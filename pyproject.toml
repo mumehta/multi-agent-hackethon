@@ -1,0 +1,40 @@
+[project]
+name = "multi-agent-incident-analysis-suite"
+version = "0.1.0"
+description = "Hackathon starter for a multi-agent DevOps incident analysis suite."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "langgraph>=0.3.34",
+    "langchain-openai>=0.3.14",
+    "pydantic>=2.11.0",
+    "python-dotenv>=1.0.1",
+    "python-multipart>=0.0.20",
+    "requests>=2.32.3",
+    "streamlit>=1.44.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "ruff>=0.11.5",
+]
+
+[project.scripts]
+multi-agent-suite = "multi_agent.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/multi_agent"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
