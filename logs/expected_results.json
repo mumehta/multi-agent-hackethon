@@ -1,0 +1,62 @@
+{
+  "01_payment_db_timeout_prod.log": {
+    "category": "timeout",
+    "severity": "critical",
+    "priority": "P1",
+    "jira_candidate": true
+  },
+  "02_auth_token_failures_prod.log": {
+    "category": "authentication",
+    "severity": "high",
+    "priority": "P2",
+    "jira_candidate": false
+  },
+  "03_inventory_dependency_unavailable_staging.log": {
+    "category": "dependency/service unavailable",
+    "severity": "medium",
+    "priority": "P3",
+    "jira_candidate": false
+  },
+  "04_api_resource_exhaustion_prod.log": {
+    "category": "resource exhaustion",
+    "severity": "critical",
+    "priority": "P1",
+    "jira_candidate": true
+  },
+  "05_deployment_config_regression_prod.log": {
+    "category": "deployment/configuration",
+    "severity": "critical",
+    "priority": "P1",
+    "jira_candidate": true
+  },
+  "06_network_dns_issue_dev.log": {
+    "category": "network/connectivity",
+    "severity": "low",
+    "priority": "P4",
+    "jira_candidate": false
+  },
+  "07_mixed_multi_incident_prod.log": {
+    "category": "mixed",
+    "severity": "critical",
+    "priority": "P1",
+    "jira_candidate": true
+  },
+  "08_unknown_noise_low_signal.log": {
+    "category": "unknown",
+    "severity": "low",
+    "priority": "P4",
+    "jira_candidate": false
+  },
+  "09_low_confidence_single_evidence.log": {
+    "category": "unknown",
+    "severity": "medium",
+    "priority": "P3",
+    "jira_candidate": false
+  },
+  "10_traceability_line_refs.log": {
+    "category": "dependency/service unavailable",
+    "severity": "high",
+    "priority": "P2",
+    "jira_candidate": false
+  }
+}
