@@ -1,0 +1,7 @@
+2026-04-04T12:00:00Z INFO service=api-gateway env=prod request_id=req-4001 Starting worker heartbeat
+2026-04-04T12:00:05Z WARN service=api-gateway env=prod request_id=req-4001 memory_usage_mb=7420 Memory usage above threshold threshold_mb=7000
+2026-04-04T12:00:06Z WARN service=api-gateway env=prod request_id=req-4001 cpu_pct=94 CPU utilization above threshold threshold_pct=85
+2026-04-04T12:00:08Z ERROR service=api-gateway env=prod request_id=req-4002 error_code=OOMKilled Worker process terminated by runtime
+2026-04-04T12:00:10Z ERROR service=api-gateway env=prod request_id=req-4003 status_code=502 Gateway failed to route request because no healthy workers remained
+2026-04-04T12:00:15Z ERROR service=api-gateway env=prod request_id=req-4004 error_code=OOMKilled Worker process terminated by runtime
+2026-04-04T12:00:20Z INFO service=api-gateway env=prod request_id=req-4005 Autoscaler event triggered desired_replicas=12

@@ -1,0 +1,7 @@
+2026-04-04T08:00:00Z INFO service=orders-service env=prod deployment_id=deploy-550 New deployment started image_tag=v2.8.1
+2026-04-04T08:00:12Z INFO service=orders-service env=prod deployment_id=deploy-550 Config loaded FEATURE_FLAG_BATCH_SETTLEMENT=true
+2026-04-04T08:00:17Z WARN service=orders-service env=prod deployment_id=deploy-550 Missing configuration key DB_POOL_SIZE using default
+2026-04-04T08:00:20Z ERROR service=orders-service env=prod deployment_id=deploy-550 Config validation failed invalid_value=none key=DB_HOST
+2026-04-04T08:00:21Z ERROR service=orders-service env=prod deployment_id=deploy-550 Application startup aborted due to configuration error
+2026-04-04T08:00:24Z ERROR service=orders-service env=prod deployment_id=deploy-550 Container exited with code=1
+2026-04-04T08:00:30Z INFO service=orders-service env=prod deployment_id=deploy-550 Rollback initiated to image_tag=v2.8.0

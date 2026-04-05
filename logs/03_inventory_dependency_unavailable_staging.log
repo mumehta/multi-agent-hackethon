@@ -1,0 +1,6 @@
+2026-04-04T11:30:00Z INFO service=inventory-service env=staging request_id=req-3001 Refreshing stock cache
+2026-04-04T11:30:03Z WARN service=inventory-service env=staging request_id=req-3001 dependency=pricing-service status_code=503 Dependency unavailable
+2026-04-04T11:30:04Z ERROR service=inventory-service env=staging request_id=req-3001 Unable to fetch pricing snapshot for sku=SKU-8821
+2026-04-04T11:30:09Z WARN service=inventory-service env=staging request_id=req-3002 dependency=pricing-service status_code=503 Dependency unavailable
+2026-04-04T11:30:10Z ERROR service=inventory-service env=staging request_id=req-3002 Unable to fetch pricing snapshot for sku=SKU-8822
+2026-04-04T11:30:18Z INFO service=inventory-service env=staging request_id=req-3003 Fallback cache response served

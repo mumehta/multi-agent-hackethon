@@ -1,0 +1,6 @@
+2026-04-04T14:45:00Z INFO service=reporting-worker env=dev request_id=req-6001 Starting scheduled report export
+2026-04-04T14:45:04Z WARN service=reporting-worker env=dev request_id=req-6001 DNS lookup latency high hostname=storage-dev.internal latency_ms=1200
+2026-04-04T14:45:05Z ERROR service=reporting-worker env=dev request_id=req-6001 error_code=ENOTFOUND hostname=storage-dev.internal DNS resolution failed
+2026-04-04T14:45:08Z INFO service=reporting-worker env=dev request_id=req-6001 Retrying DNS lookup attempt=2
+2026-04-04T14:45:10Z ERROR service=reporting-worker env=dev request_id=req-6001 error_code=ENOTFOUND hostname=storage-dev.internal DNS resolution failed
+2026-04-04T14:45:15Z WARN service=reporting-worker env=dev request_id=req-6001 Job marked for retry in next cycle
