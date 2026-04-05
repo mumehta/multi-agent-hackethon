@@ -1,0 +1,8 @@
+2026-04-04T10:20:58Z INFO service=payment-service env=prod request_id=req-1001 Starting payment authorization flow
+2026-04-04T10:21:01Z INFO service=payment-service env=prod request_id=req-1001 Connecting to database host=db-prod-1
+2026-04-04T10:21:05Z WARN service=payment-service env=prod request_id=req-1001 DB connection latency above threshold latency_ms=1800
+2026-04-04T10:21:08Z ERROR service=payment-service env=prod request_id=req-1001 error_code=ETIMEDOUT host=db-prod-1 Database connection timed out after 3000ms
+2026-04-04T10:21:09Z ERROR service=payment-service env=prod request_id=req-1001 status_code=504 Upstream timeout returned to caller
+2026-04-04T10:21:11Z ERROR service=payment-service env=prod request_id=req-1002 error_code=ETIMEDOUT host=db-prod-1 Database connection timed out after 3000ms
+2026-04-04T10:21:12Z ERROR service=payment-service env=prod request_id=req-1002 status_code=504 Upstream timeout returned to caller
+2026-04-04T10:21:15Z INFO service=payment-service env=prod request_id=req-1003 Retry scheduled with backoff_ms=500

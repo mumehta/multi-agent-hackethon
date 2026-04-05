@@ -1,0 +1,8 @@
+2026-04-04T15:00:00Z INFO service=checkout-service env=prod request_id=req-7001 Begin checkout session
+2026-04-04T15:00:03Z ERROR service=checkout-service env=prod request_id=req-7001 error_code=ETIMEDOUT host=redis-prod-2 Cache request timed out after 1500ms
+2026-04-04T15:00:04Z WARN service=checkout-service env=prod request_id=req-7001 fallback=disabled Cache fallback path unavailable
+2026-04-04T15:00:06Z ERROR service=checkout-service env=prod request_id=req-7002 status_code=401 Authentication failed for partner_id=partner-9
+2026-04-04T15:00:10Z WARN service=checkout-service env=prod request_id=req-7003 memory_usage_mb=6180 Memory usage above threshold threshold_mb=6000
+2026-04-04T15:00:11Z ERROR service=checkout-service env=prod request_id=req-7004 error_code=OOMKilled Worker process terminated by runtime
+2026-04-04T15:00:12Z ERROR service=checkout-service env=prod request_id=req-7005 status_code=502 Checkout request failed because worker restarted
+2026-04-04T15:00:18Z INFO service=checkout-service env=prod request_id=req-7006 Recovery workflow started

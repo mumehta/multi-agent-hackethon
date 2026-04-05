@@ -1,0 +1,8 @@
+2026-04-04T18:00:00Z INFO service=user-profile env=prod request_id=req-10001 Received profile update request
+2026-04-04T18:00:02Z INFO service=user-profile env=prod request_id=req-10001 Calling dependency=profile-db
+2026-04-04T18:00:05Z ERROR service=user-profile env=prod request_id=req-10001 error_code=ECONNREFUSED host=profile-db-prod-1 Connection refused
+2026-04-04T18:00:06Z ERROR service=user-profile env=prod request_id=req-10001 status_code=503 Profile update failed due to backend unavailability
+2026-04-04T18:00:09Z WARN service=user-profile env=prod request_id=req-10002 dependency=profile-db retry_count=1 Retrying backend operation
+2026-04-04T18:00:12Z ERROR service=user-profile env=prod request_id=req-10002 error_code=ECONNREFUSED host=profile-db-prod-1 Connection refused
+2026-04-04T18:00:13Z ERROR service=user-profile env=prod request_id=req-10002 status_code=503 Profile update failed due to backend unavailability
+2026-04-04T18:00:20Z INFO service=user-profile env=prod request_id=req-10003 Alert emitted to incident channel

@@ -1,0 +1,8 @@
+2026-04-04T09:10:00Z INFO service=auth-gateway env=prod request_id=req-2001 Processing API token validation
+2026-04-04T09:10:01Z WARN service=auth-gateway env=prod request_id=req-2001 Invalid token signature token_id=tk-7781
+2026-04-04T09:10:01Z ERROR service=auth-gateway env=prod request_id=req-2001 status_code=401 Authentication failed for user_id=user-492
+2026-04-04T09:10:05Z WARN service=auth-gateway env=prod request_id=req-2002 Token expired token_id=tk-7782
+2026-04-04T09:10:05Z ERROR service=auth-gateway env=prod request_id=req-2002 status_code=401 Authentication failed for user_id=user-493
+2026-04-04T09:10:09Z WARN service=auth-gateway env=prod request_id=req-2003 Invalid token signature token_id=tk-7783
+2026-04-04T09:10:09Z ERROR service=auth-gateway env=prod request_id=req-2003 status_code=401 Authentication failed for user_id=user-494
+2026-04-04T09:10:15Z INFO service=auth-gateway env=prod request_id=req-2004 Metrics flushed auth_failures=3
